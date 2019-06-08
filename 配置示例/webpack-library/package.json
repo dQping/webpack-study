@@ -1,0 +1,16 @@
+{
+  "name": "webpack-library",
+  "version": "1.0.0",
+  "description": "webpack 打包一个函数库或组件库的配置示例",
+  "main": "./dist/util.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Demi",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.3"
+  }
+}

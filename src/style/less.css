@@ -1,0 +1,12 @@
+body {
+  background-color: yellow;
+}
+body h1 {
+  color: #fff;
+  transform: translate(100px, 100px);
+}
+body .container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+}
