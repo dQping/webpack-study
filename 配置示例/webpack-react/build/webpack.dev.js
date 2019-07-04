@@ -18,7 +18,16 @@ const devConfig = {
     compress: true,
     open: true,
     hot: true,
-    hotOnly: true
+    //hotOnly: true,
+    // 解决单页面应用路由问题
+    historyApiFallback: true,
+    proxy: {
+      "/mockapi": {
+        target: "https://www.easy-mock.com/mock/5cea234da580f1404530004c/",
+        secure: false,
+        changeOrigin: true
+      }
+    }
   },
   plugins: [new webpack.HotModuleReplacementPlugin()]
 };

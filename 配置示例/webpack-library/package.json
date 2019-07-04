@@ -1,5 +1,5 @@
 {
-  "name": "webpack-library",
+  "name": "webpack-library-ping",
   "version": "1.0.0",
   "description": "webpack 打包一个函数库或组件库的配置示例",
   "main": "./dist/util.js",

@@ -1,19 +1,26 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import "./style/iconfont.scss";
-import UserPhoto from "./images/default_photo.png";
+
+import axios from "axios";
+import List from "./List";
+import Home from "./Home";
 
 class App extends Component {
+  componentDidMount() {
+    axios.get("/mockapi/tabel/list").then(res => {
+      console.log(res.data);
+    });
+  }
   render() {
     return (
-      <div>
-        <h1>hello react</h1>
-        <span className="iconfont">&#xe6df;</span>
-        <span className="iconfont">&#xe882;</span>
-        <span className="iconfont">&#xe6b4;</span>
-        <span className="iconfont">&#xe605;</span>
-        <img src={UserPhoto} alt="用户头像" />
-      </div>
+      <BrowserRouter>
+        <div>
+          <Route path="/" exact component={Home} />
+          <Route path="/list" component={List} />
+        </div>
+      </BrowserRouter>
     );
   }
 }

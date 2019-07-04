@@ -1,3 +1,5 @@
 node_modules
 配置示例/webpack-react/node_modules
 配置示例/webpack-library/node_modules
+配置示例/makeloader/node_modules
+配置示例/makeplugin/node_modules
